@@ -42,7 +42,7 @@ function copyAllToClipboard() {
     }
 }
 
-function resetValue(event) {
+function resetValue() {
     const inputs = document.querySelectorAll('input, select, textarea');
     inputs.forEach(input => {
         if (input.tagName === 'SELECT') {

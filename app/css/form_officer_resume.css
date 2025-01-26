@@ -2,7 +2,9 @@
     font-weight: bold;
     min-width: 160px;
 }
-
+.form-group-1 p {
+    min-width: 160px;
+}
 .form-group-1 {
     margin-bottom: 10px;
     display: flex;
