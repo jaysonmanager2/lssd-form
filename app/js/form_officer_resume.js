@@ -43,8 +43,6 @@ function copyAllToClipboard() {
 }
 
 function resetValue(event) {
-    event.preventDefault();
-
     const inputs = document.querySelectorAll('input, select, textarea');
     inputs.forEach(input => {
         if (input.tagName === 'SELECT') {
@@ -53,6 +51,21 @@ function resetValue(event) {
             input.value = '';
         }
     });
+}
+
+function selectSuggestion(element, inputId) {
+    const inputField = document.getElementById(inputId);
+
+    // Thêm nội dung gợi ý vào ô input
+    const newValue = element.textContent;
+    if (inputField.value) {
+        inputField.value += `, ${newValue}`; // Thêm dấu phẩy nếu input không rỗng
+    } else {
+        inputField.value = newValue;
+    }
+
+    // Xóa gợi ý được nhấn
+    element.remove();
 }
 
 // Lấy ngày hiện tại

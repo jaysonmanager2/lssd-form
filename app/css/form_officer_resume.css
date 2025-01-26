@@ -9,10 +9,13 @@
     align-items: center;
     gap: 10px;
 }
+
 .reset-btn {
     background: rgb(225, 97, 97) !important;
 }
-.copy-btn, .reset-btn {
+
+.copy-btn,
+.reset-btn {
     margin-top: 20px;
     padding: 10px 15px;
     background-color: #ac770c;
@@ -67,4 +70,26 @@ select {
 
 .input-date {
     width: 150px !important;
+}
+
+/* sug */
+.suggestions {
+    margin: 5px 0 15px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #f1dbb1;
 }
