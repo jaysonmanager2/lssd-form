@@ -42,6 +42,19 @@ function copyAllToClipboard() {
     }
 }
 
+function resetValue(event) {
+    event.preventDefault();
+
+    const inputs = document.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+        if (input.tagName === 'SELECT') {
+            input.selectedIndex = 0;
+        } else {
+            input.value = '';
+        }
+    });
+}
+
 // Lấy ngày hiện tại
 const today = new Date();
 const yyyy = today.getFullYear();

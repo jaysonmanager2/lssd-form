@@ -20,6 +20,7 @@
 }
 
 .card {
+    border: 1px solid #EFB036;
     width: 220px;
     height: 321px;
     background: #fff;

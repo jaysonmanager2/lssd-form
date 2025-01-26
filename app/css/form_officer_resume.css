@@ -9,8 +9,10 @@
     align-items: center;
     gap: 10px;
 }
-
-.copy-btn {
+.reset-btn {
+    background: rgb(225, 97, 97) !important;
+}
+.copy-btn, .reset-btn {
     margin-top: 20px;
     padding: 10px 15px;
     background-color: #ac770c;
@@ -27,8 +29,9 @@
 }
 
 .box-form-1 {
+    scale: 0.9;
     padding: 10px;
-    border: 1px solid;
+    border: 1px solid #EFB036;
     border-radius: 10px;
     /* background: #212121; */
     /* color: #fff; */
