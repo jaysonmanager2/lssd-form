@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/Logo_LSCSD.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../app/css/style.css">
+    <link rel="stylesheet" href="../app/css/form_officer_resume.css">
+    <title>LSSD Báo Cáo</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img class="img-logo-lssd" src="../images/Logo_LSCSD.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-navbar">
+                    <li class="nav-item menu-item">
+                        <a class="nav-link menu-link active" href="./form_officer_resume.html">Form Lý Lịch Sĩ Quan</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link menu-link" aria-current="page" href="./form_ia_report.html">Form
+                            Báo
+                            Cáo IA</a>
+                    </li>
+                    <li class="nav-item dropdown menu-item">
+                        <a class="nav-link dropdown-toggle menu-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Form Khác
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">NOT YET</a></li>
+                            <li><a class="dropdown-item" href="#">NOT YET</a></li>
+                            <li><a class="dropdown-item" href="#">NOT YET</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form class="box-form-1 container mt-5 mb-5">
+        <h2>Form Viết Lý Lịch</h2>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-1">Tên Ingame:</label>
+            <input placeholder="Nhập tên trong game của bạn. . . " class="input-ia" type="text" id="input-1" value=""
+                required>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-2">CCCD:</label>
+            <input placeholder="Nhập 6 số cuối của CCCD trong game của bạn. . . " class="input-ia" type="number"
+                id="input-2" value="" required>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-3">Tên thật:</label>
+            <input placeholder="Nhập tên thật ngoài đời của bạn. . . " class="input-ia" type="text" id="input-3"
+                value="" required>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-4">Ngày Sinh:</label>
+            <input class="input-ia input-date" type="date" id="input-4" value="" required>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-5">Nơi Sống:</label>
+            <textarea placeholder="Nhập nơi bạn sinh sống ngoài đời - Ví dụ: Hồ Chí Minh " class="input-ia" type="text"
+                id="input-5" value="" cols="100%" required></textarea>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-6" class="label-select">Chức vụ hiện tại:</label>
+            <select id="select-1">
+                <option value="Sĩ Quan Thực Tập">Sĩ Quan Thực Tập</option>
+                <option value="Sĩ Quan">Sĩ Quan</option>
+                <option value="Phó Cảnh Sát Trưởng">Phó Cảnh Sát Trưởng</option>
+                <option value="Cảnh Sát Trưởng">Cảnh Sát Trưởng</option>
+                <option value="Thư Ký Cục Trưởng">Thư Ký Cục Trưởng</option>
+                <option value="Trợ Lý Điều Hành">Trợ Lý Điều Hành</option>
+            </select>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-7" class="label-select">Quân hàm:</label>
+            <select id="select-1">
+                <option value="Hạ Sĩ">Hạ Sĩ</option>
+                <option value="Trung Sĩ">Trung Sĩ</option>
+                <option value="Thượng Sĩ">Thượng Sĩ</option>
+                <option value="Thiếu Úy">Thiếu Úy</option>
+                <option value="Trung Úy">Trung Úy</option>
+                <option value="Thượng Úy">Thượng Úy</option>
+                <option value="Đại Úy">Đại Úy</option>
+                <option value="Thiếu Tá">Thiếu Tá</option>
+                <option value="Trung Tá">Trung Táĩ</option>
+                <option value="Thượng Tá">Thượng Tá</option>
+                <option value="Đại Tá">Đại Tá</option>
+                <option value="Thiếu Tướng">Thiếu Tướng</option>
+                <option value="Trung Tướng">Trung Tướng</option>
+                <option value="Thượng Tướng">Thượng Tướng</option>
+                <option value="Đại Tướng">Đại Tướng</option>
+            </select>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-8">Ngày vào đồn:</label>
+            <input class="input-ia input-date" type="date" id="input-6" value="" required>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-9">Sở thích:</label>
+            <input placeholder="Ví Dụ: Thích làm 1 cảnh sát liêm chính, nghiêm túc, . . ." class="input-ia" type="text"
+                id="input-7" value="" required>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-10">Châm ngôn làm việc:</label>
+            <textarea placeholder="Ví Dụ: Nghiêm Túc, Thật Thà Và Dũng Cảm. . . " class="input-ia" type="text"
+                id="input-8" value="" cols="100%" required></textarea>
+        </div>
+        <button class="copy-btn" onclick="copyAllToClipboard()">Sao Chép</button>
+    </form>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Design by Son Myname, IA</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+
+            </ul>
+        </footer>
+    </div>
+
+</body>
+<script src="../app/js/form_officer_resume.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</html>
