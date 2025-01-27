@@ -34,20 +34,20 @@ function copyAllToClipboard() {
 
     // Tạo nội dung sao chép
     var result = `
- Kính Gửi Cục Trưởng
- ${select1}
- Cục Trưởng: ${li1}
- Phó Cục Trưởng: ${li2}
- Trợ Lý Điều Hành: ${li3}
- ${select2 ? `Trưởng Phòng: ${select2}` : ''.trim()}
- ${select3 ? `Phó Phòng: ${select3}` : ''.trim()}
- Tôi: ${input1}
- Chức Vụ: ${select4}
- Số Hiệu: ${input2}
- Quân Hàm: ${select5}
- Lý Do: ${input3}
- Ngày Xin Nghỉ: ${formattedDate4}
- Ngày Quay Lại: ${formattedDate5}
+Kính Gửi Cục Trưởng
+${select1}
+Cục Trưởng: ${li1}
+Phó Cục Trưởng: ${li2}
+Trợ Lý Điều Hành: ${li3}
+${select2 ? `Trưởng Phòng: ${select2}` : ''.trim()}
+${select3 ? `Phó Phòng: ${select3}` : ''.trim()}
+Tôi: ${input1}
+Chức Vụ: ${select4}
+Số Hiệu: ${input2}
+Quân Hàm: ${select5}
+Lý Do: ${input3}
+Ngày Xin Nghỉ: ${formattedDate4}
+Ngày Quay Lại: ${formattedDate5}
            Ký Tên: ${input6}`;
 
     // Loại bỏ các dòng trống và dồn các thông tin lại với nhau
