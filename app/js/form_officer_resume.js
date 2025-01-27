@@ -23,11 +23,7 @@ function copyAllToClipboard() {
         }
 
         if (inputValue.trim() !== '') {
-            if (label.textContent.includes('- Đội')) {
-                textToCopy += `Tên: ${inputs[0].value} - Đội ${inputs[1].options[inputs[1].selectedIndex].text}: \n`;
-            } else if (!label.textContent.includes('Tên:')) {
-                textToCopy += `${label.textContent} ${inputValue}\n`;
-            }
+            textToCopy += `${label.textContent} ${inputValue}\n`;
         }
     });
 
