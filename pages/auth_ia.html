@@ -59,46 +59,14 @@
         </div>
     </nav>
 
-    <form class="box-form-1 container mt-5">
-        <h2>Form Báo Cáo Sai Phạm IA</h2>
-        <hr>
-        <div class="form-group-1">
-            <label id="label-1">Tên:</label>
-            <input placeholder="Nhập tên. . . " class="input-ia" type="text" id="input-1" value="">
-            <span>
-                <label id="label-2" class="label-select"> - Đội</label>
-                <select id="select-1">
-                    <option value="DS: <@1208265190144213026> <@414038658111242240>">DS</option>
-                    <option value="PS: <@547944496038543370>">PS</option>
-                    <option value="SS: <@1276592920178462918> <@1281525997799211019>">SS</option>
-                    <option value="IA: <@1173625394356818053>">IA</option>
-                    <option value="TA: <@1>">TA</option>
-                </select>
-            </span>
-        </div>
-
-        <div class="form-group-1">
-            <label id="label-3">CSVGS:</label>
-            <input placeholder="Nhập Giám Sát. . . " class="input-ia" type="text" id="input-2" value="" required>
-        </div>
-        <div class="form-group-1">
-            <label id="label-4">Vi phạm:</label>
-            <textarea placeholder="Nhập vi phạm. . . " class="input-ia" type="text" id="input-3" value="" cols="100%"
-                required></textarea>
-        </div>
-        <div class="form-group-1">
-            <label id="label-5">Biện pháp:</label>
-            <textarea class="input-ia" type="text" id="input-4" value="" name="bien-phap" cols="100%"
-                placeholder="Nhập biện pháp. . . " required></textarea>
-            <input type="text" id="input-5" value="<@&1178655002810667059>" hidden>
-        </div>
-        <div class="form-group-1">
-            <p class="error-mess text-danger"></p>
-        </div>
-        <hr>
-        <button class="copy-btn" onclick="copyAllToClipboard()">Sao Chép</button>
-    </form>
+    <!-- Xác thực mật mã -->
+    <div id="auth-container" class="auth-container">
+        <h2>Xác Thực IA</h2>
+        <input type="password" id="password-input" placeholder="Nhập mật mã...">
+        <button class="btn-auth" id="auth-button" onclick="checkPassword()">Xác Thực</button>
+        <p id="error-message" class="error-message"></p>
+    </div>
 </body>
-<script src="../app/js/form_ia_report.js"></script>
+<script src="../app/js/auth_ia.js"></script>
 
 </html>
