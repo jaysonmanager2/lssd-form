@@ -72,3 +72,50 @@ select {
 #input-1 {
     width: 80%;
 }
+
+/* LOGIN FORM */
+.auth-container {
+    width: 30%;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #EFB036;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+}
+
+.auth-container .btn-auth {
+    width: 100%;
+    padding: 10px;
+    background: #EFB036;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.auth-container .btn-auth:hover {
+    background: #c08000;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
