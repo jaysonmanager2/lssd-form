@@ -59,16 +59,16 @@
         </div>
     </nav>
 
-    <form class="box-form-1 container mt-5">
+    <form class="box-form-1 container mt-5 mb-5">
         <h2>Form Báo Cáo Sai Phạm IA</h2>
         <hr>
         <div class="form-group-1">
-            <label id="label-1">Tên:</label>
+            <label class="lb-lssd-form" id="label-1">Tên:</label>
             <input placeholder="Nhập tên. . . " class="input-ia" type="text" id="input-1" value="">
-            <span>
+            <span class="sp-box-doi">
                 <label id="label-2" class="label-select"> - Đội</label>
                 <select id="select-1">
-                    <option value="DS: <@1208265190144213026> <@414038658111242240>">DS</option>
+                    <option value="DS: <@1208265190144213026>">DS</option>
                     <option value="PS: <@547944496038543370>">PS</option>
                     <option value="SS: <@1276592920178462918> <@1281525997799211019>">SS</option>
                     <option value="IA: <@1173625394356818053>">IA</option>
@@ -78,26 +78,57 @@
         </div>
 
         <div class="form-group-1">
-            <label id="label-3">CSVGS:</label>
-            <input placeholder="Nhập Giám Sát. . . " class="input-ia" type="text" id="input-2" value="" required>
+            <label class="lb-lssd-form" id="label-3">CSVGS:</label>
+            <input placeholder="Nhập Giám Sát (nếu có). . . " class="input-ia" type="text" id="input-2" value=""
+                required>
         </div>
         <div class="form-group-1">
-            <label id="label-4">Vi phạm:</label>
+            <label class="lb-lssd-form" id="label-4">Vi phạm:</label>
             <textarea placeholder="Nhập vi phạm. . . " class="input-ia" type="text" id="input-3" value="" cols="100%"
                 required></textarea>
         </div>
         <div class="form-group-1">
-            <label id="label-5">Biện pháp:</label>
+            <label class="lb-lssd-form" id="label-5">Biện pháp:</label>
             <textarea class="input-ia" type="text" id="input-4" value="" name="bien-phap" cols="100%"
                 placeholder="Nhập biện pháp. . . " required></textarea>
             <input type="text" id="input-5" value="<@&1178655002810667059>" hidden>
         </div>
         <div class="form-group-1">
+            <p></p>
+            <div class="suggestions" id="suggestions">
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-4')">Bàn giao lại cho PCST làm việc nhắc nhở rồi báo cáo lại</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-4')">--</span>
+            </div>
+        </div>
+        <div class="form-group-1">
+            <label class="lb-lssd-form" id="label-6">Tên Đối Tượng:</label>
+            <input placeholder="Nhập tên đối tượng. . . " class="input-ia" type="text" id="input-7" value="" required>
+        </div>
+        <div class="form-group-1">
+            <label class="lb-lssd-form" id="label-7">CCCD:</label>
+            <input placeholder="Nhập CCCD đối tượng. . . " class="input-ia" type="text" id="input-6" value="" required>
+        </div>
+        <div class="form-group-1">
+            <p></p>
             <p class="error-mess text-danger"></p>
         </div>
         <hr>
         <button class="copy-btn" onclick="copyAllToClipboard()">Sao Chép</button>
     </form>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Designed and developed by Son Myname, IA</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            </ul>
+        </footer>
+    </div>
 </body>
 <script src="../app/js/form_ia_report.js"></script>
 

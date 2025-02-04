@@ -63,8 +63,8 @@ function copyAllToClipboard() {
     const soTien = document.getElementById('input-7').value;
 
     // Tạo chuỗi văn bản theo định dạng yêu cầu
-    const resultText = 
-`Tên Người Giải Quyết: ${tenNguoiGiaiQuyet}
+    const resultText =
+        `Tên Người Giải Quyết: ${tenNguoiGiaiQuyet}
 Tên Người Bảo Lãnh: ${tenNguoiBaoLanh}
 Tên Người Vi Phạm: ${tenNguoiViPham}
 CCCD: ${cccd}
@@ -88,8 +88,8 @@ Số tiền: ${soTien}
     // Thông báo cho người dùng
     alert('Dữ liệu đã được sao chép!\n' + resultText);
 
-     // Tính tiền cho input-7 tự động
-     tuDongTinhTien();
+    // Tính tiền cho input-7 tự động
+    tuDongTinhTien();
 }
 
 // Hàm tính tiền tự động cho input-7 dựa trên mức án
@@ -99,11 +99,12 @@ function tuDongTinhTien() {
 
     // Lấy giá trị của Mức án
     const mucAnValue = parseInt(inputMucAn.value);
-
+    
     // Tính số tiền
     if (!isNaN(mucAnValue)) {
         const soTien = mucAnValue * giaTien1Phut;
         inputTien.value = soTien.toLocaleString() + '$';
+        
     } else {
         inputTien.value = '0$'; // Nếu mức án không hợp lệ, trả về 0
     }
@@ -132,3 +133,39 @@ function resetValue() {
     if (toiDanh2) toiDanh2.value = 0; // Đặt lại giá trị điểm trong input-6
     if (toiDanh3) toiDanh3.value = 0; // Đặt lại giá trị tiền trong input-7
 }
+
+// const crimes = [
+//     { text: "Nhập cư trái phép", time: 30 },
+//     { text: "Tàng trữ chất cấm trái phép (Cây thảo dược)", time: 30 },
+//     { text: "Có lời lẽ xúc phạm đến danh dự, nhân phẩm người khác", time: 30 },
+//     { text: "Sử dụng vũ khí thô sơ nơi công cộng", time: 30 },
+//     { text: "Sử dụng vũ khí nóng nơi công cộng+Tàng trữ vũ khí nóng trái phép", time: 90, id: "not-qs" },
+//     { text: "Sử dụng vũ khí nóng nơi công cộng (Có Giấy NVQS)", time: 30, id: "yet-qs" },
+//     { text: "Tàng trữ vũ khí nóng", time: 30 },
+//     { text: "Gây thương tích chưa nghiêm trọng cho người khác", time: 30 },
+//     { text: "Chống đối người thi hành công vụ", time: 30 },
+//     { text: "Xâm nhập trụ sở, nơi làm việc ban ngành nhà nước", time: 30 },
+//     { text: "Xúc phạm Sĩ quan cảnh sát", time: 30 },
+//     { text: "Sử dụng phương tiện gây thương tích chưa nghiêm trọng", time: 30 }
+// ];
+
+// // Hàm tạo bảng
+// function generateTable() {
+//     const tbody = document.querySelector(".box-law tbody");
+//     tbody.innerHTML = ""; // Xóa nội dung cũ nếu có
+
+//     crimes.forEach(crime => {
+//         const tr = document.createElement("tr");
+//         const td = document.createElement("td");
+
+//         if (crime.id) td.id = crime.id; // Thêm ID nếu có
+//         td.textContent = crime.text;
+//         td.onclick = () => selectSuggestion(td, crime.time, 'input-5', 'input-6', 'input-7');
+
+//         tr.appendChild(td);
+//         tbody.appendChild(tr);
+//     });
+// }
+
+// // Gọi hàm khi trang tải xong
+// document.addEventListener("DOMContentLoaded", generateTable);
