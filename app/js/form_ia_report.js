@@ -1,6 +1,4 @@
 function copyAllToClipboard(event) {
-    const labels = document.querySelectorAll('label');
-    const inputs = document.querySelectorAll('input, select, textarea');
     const errorMessage01 = document.querySelector('.error-mess');
     let textToCopy = '';
     let missingFields = [];
@@ -8,9 +6,11 @@ function copyAllToClipboard(event) {
     // Danh sách các trường bắt buộc nhập
     const requiredFields = [
         { id: "input-1", name: "Tên" },
-        { id: "input-2", name: "CSVGS" },
+        // { id: "input-2", name: "CSVGS" },
         { id: "input-3", name: "Vi phạm" },
-        { id: "input-4", name: "Biện pháp" }
+        { id: "input-4", name: "Biện pháp" },
+        { id: "input-7", name: "Tên đối tượng" },
+        { id: "input-6", name: "CCCD" },
     ];
 
     // Kiểm tra xem có trường nào bị bỏ trống không
@@ -20,42 +20,36 @@ function copyAllToClipboard(event) {
             missingFields.push(field.name);
         }
     });
+    //
 
     // Nếu có trường bị thiếu, cảnh báo và dừng sao chép
     if (missingFields.length > 0) {
         errorMessage01.textContent = `Vui lòng nhập đầy đủ thông tin sau:\n- ${missingFields.join("\n- ")}`;
-        // alert(`Vui lòng nhập đầy đủ thông tin sau:\n- ${missingFields.join("\n- ")}`);
         return;
     }
 
-    labels.forEach((label, index) => {
-        const associatedInput = inputs[index];
-        const inputValue = associatedInput.tagName === 'SELECT'
-            ? associatedInput.options[associatedInput.selectedIndex].text
-            : associatedInput.value;
+    // Thu thập dữ liệu
+    const tenViPham = document.getElementById("input-1").value.trim();
+    const soCanhSat = document.getElementById("select-1").value;
+    const canhSatVienGS = document.getElementById("input-2").value.trim();
+    const viPham = document.getElementById("input-3").value.trim();
+    const bienPhap = document.getElementById("input-4").value.trim();
+    const cccd = document.getElementById("input-6").value.trim();
+    const tenDoiTuong = document.getElementById("input-7").value.trim();
 
-        if (inputValue.trim() !== '') {
-            if (label.textContent.includes('- Đội')) {
-                textToCopy += `Tên: ${inputs[0].value} - Đội ${inputs[1].options[inputs[1].selectedIndex].value} \n`;
-            } else if (!label.textContent.includes('Tên:')) {
-                if (associatedInput.id === "input-4") {
-                    textToCopy += `${label.textContent} ${inputValue.trim()} `;
-                } else textToCopy += `${label.textContent} ${inputValue}\n`;
-            }
-        }
-    });
-
-    const input5SoKiemSoat = document.getElementById('input-5');
-    if (input5SoKiemSoat) {
-        textToCopy += `${input5SoKiemSoat.value}`;
-    }
+    textToCopy += tenViPham && soCanhSat ? `Tên: ${tenViPham} - Đội ${soCanhSat}\n` : '';
+    textToCopy += canhSatVienGS ? `CSVGS: ${canhSatVienGS}\n` : '';
+    textToCopy += viPham ? `Vi phạm: ${viPham}\n` : '';
+    textToCopy += bienPhap ? `Biện pháp: ${bienPhap} <@&1178655002810667059>\n` : '';
+    textToCopy += tenDoiTuong ? `Tên đối tượng: ${tenDoiTuong}\n` : '';
+    textToCopy += cccd ? `CCCD: ${cccd}\n` : '';
 
     if (textToCopy) {
         navigator.clipboard.writeText(textToCopy).then(() => {
-            alert(`Đã cóp py:\n${textToCopy}`);
+            alert(`Đã sao chép:\n________\n${textToCopy}`);
         });
     } else {
-        alert('Hong thấy dữ liệu! dui lòng viết dô đi');
+        alert('Không có dữ liệu để sao chép! Vui lòng nhập thông tin.');
     }
 }
 
@@ -73,4 +67,18 @@ function checkPassword() {
         // Hiển thị thông báo lỗi nếu mật mã sai
         errorMessage.textContent = "Mật mã không đúng. Vui lòng thử lại.";
     }
+}
+
+function selectSuggestion(element, inputId) {
+    const inputField = document.getElementById(inputId);
+
+    // Thêm nội dung gợi ý vào ô input
+    const newValue = element.textContent;
+    if (inputField.value) {
+        inputField.value += ` ${newValue}`; // Thêm dấu phẩy nếu input không rỗng
+    } else {
+        inputField.value = newValue;
+    }
+    // Xóa gợi ý được nhấn
+    element.remove();
 }

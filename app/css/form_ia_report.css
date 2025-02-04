@@ -11,11 +11,6 @@ body {
     gap: 10px;
 }
 
-.form-group-1 label {
-    font-weight: bold;
-    flex: 1;
-}
-
 .copy-btn {
     margin-top: 20px;
     padding: 10px 15px;
@@ -69,10 +64,6 @@ select {
     color: #000;
 }
 
-#input-1 {
-    width: 80%;
-}
-
 /* LOGIN FORM */
 .auth-container {
     width: 30%;
@@ -118,4 +109,65 @@ select {
 
 .hidden {
     display: none;
+}
+
+/* sug */
+.suggestions {
+    margin: 5px 0 15px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #f1dbb1;
+}
+
+li {
+    list-style: none;
+}
+
+.static-input {
+    cursor: not-allowed;
+    /* Không cho phép hightlight */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #f0e404 !important;
+    width: 25% !important;
+    font-weight: bold;
+    color: #292929 !important;
+}
+
+/*  */
+#label-2 {
+    font-weight: bold;
+    min-width: 50px;
+}
+.form-group-1 p {
+    min-width: 150px;
+}
+
+.form-group-1 .lb-lssd-form {
+    font-weight: bold;
+    min-width: 150px;
+}
+
+.form-group-1 .sp-box-doi {
+    display: flex;
+    align-items: center;
+}
+
+#input-1 {
+    width: 50%;
 }
