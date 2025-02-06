@@ -2,17 +2,27 @@
 // Cấm việc mở Developer Tools
 function notTools() {
     document.addEventListener("keydown", function (e) {
-        if (e.keyCode === 123) { // F12
-            e.preventDefault();
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode === 73) { // Ctrl+Shift+I (Inspect Element)
-            e.preventDefault();
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode === 67) { // Ctrl+Shift+I (Inspect Element)
-            e.preventDefault();
+        switch (e.keyCode) {
+            case 123: // F12
+                e.preventDefault();
+                break;
+            case 73: // Ctrl+Shift+I
+            case 67: // Ctrl+Shift+C
+            case 74: // Ctrl+Shift+J
+                if (e.ctrlKey && e.shiftKey) {
+                    e.preventDefault();
+                }
+                break;
+            case 85:
+                if (e.ctrlKey) {
+                    e.preventDefault();
+
+                }// Ctrl+U
+                break;
         }
     });
-    document.addEventListener('contextmenu', function (e) {
+
+    document.addEventListener("contextmenu", function (e) {
         e.preventDefault();
         alert("Hong Cóa Đâu Hee !!");
     });
