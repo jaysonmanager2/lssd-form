@@ -257,3 +257,24 @@
         transform: rotate3d(1, 1, 1, 220deg) scale(.95);
     }
 }
+
+/* ORTHER */
+.card-img {
+    position: relative ;
+    cursor: pointer;
+}
+.card-img p {
+    position: absolute;
+    bottom: 0;
+    
+}
+.card-img img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+.card-img:hover img {
+    filter: blur(2px);
+}
