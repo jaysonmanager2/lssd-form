@@ -278,3 +278,12 @@
 .card-img:hover img {
     filter: blur(2px);
 }
+
+a#quy-tac-xung-ho img{
+    scale: 0.9;
+    object-fit: cover;
+    width: 100%;
+}
+a#quy-tac-xung-ho {
+    width: 500px;
+}
