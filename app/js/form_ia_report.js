@@ -9,8 +9,6 @@ function copyAllToClipboard(event) {
         // { id: "input-2", name: "CSVGS" },
         { id: "input-3", name: "Vi phạm" },
         { id: "input-4", name: "Biện pháp" },
-        { id: "input-7", name: "Tên đối tượng" },
-        { id: "input-6", name: "CCCD" },
     ];
 
     // Kiểm tra xem có trường nào bị bỏ trống không
