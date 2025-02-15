@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../app/css/style.css">
     <link rel="stylesheet" href="../app/css/form_ia_report.css">
+    <link rel="stylesheet" href="../app/css/auth_ia.css">
     <title>Xác Thực</title>
 </head>
 
@@ -40,7 +41,7 @@
                     </li>
                     <li class="nav-item menu-item">
                         <a class="nav-link menu-link active" aria-current="page" href="#">
-                            Báo Cáo Sai Phạm 
+                            Báo Cáo Sai Phạm
                         </a>
                     </li>
                     <li class="nav-item menu-item">
@@ -53,7 +54,11 @@
         </div>
         <div class="onl-user-count me-5">Online: <span id="onlineUsers" class="ms-1">0</span></div>
     </nav>
-
+    
+    <div class="overlay"></div>
+    <div class="box-loader mt-5">
+        <span class="eye-loader"></span>
+    </div>
     <!-- Xác thực mật mã -->
     <div id="auth-container" class="auth-container">
         <h2>Xác Thực</h2>
@@ -61,7 +66,7 @@
         <button class="btn-auth" id="auth-button" onclick="checkPassword()">Xác Thực</button>
         <p id="error-message" class="error-message"></p>
     </div>
-    
+
     <div class="container">
         <marquee behavior="" direction="">🚀Vui lòng nhập mã xác thực để biết bạn là ai !!!🚀</marquee>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
