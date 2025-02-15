@@ -45,7 +45,12 @@
                             Báo Cáo Sai Phạm
                         </a>
                     </li>
-                    <li class="nav-item dropdown menu-item">
+                    <li class="nav-item menu-item">
+                        <a class="nav-link menu-link" aria-current="page" href="./pages/get_equipment.html">
+                            Lấy Trang Bị
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item dropdown menu-item">
                         <a class="nav-link dropdown-toggle menu-link" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Khác
@@ -55,16 +60,20 @@
                             <li><a class="dropdown-item" href="#">NOT YET</a></li>
                             <li><a class="dropdown-item" href="#">NOT YET</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item menu-item">
-                        <p class="btn btn-success">Online: <span id="onlineUsers">0</span></p>
-                    </li>
+                    </li> -->
+                    <!-- <li class="nav-item menu-item">
+                        <div class="onl-user-count"><span id="onlineUsers"></span></div>
+                    </li> -->
                 </ul>
             </div>
         </div>
+        <div class="onl-user-count me-5">Online: <span id="onlineUsers" class="ms-1">0</span></div>
     </nav>
 
     <div class="container">
+        <div class="label-top ms-5 mt-5">
+            <h4>Form Nhập Liệu</h4>
+        </div>
         <div class="row">
             <div class="col-md-3">
                 <a class="card lssd container mt-5 mb-5" href="./pages/form_officer_resume.html" target="_blank">
@@ -102,7 +111,9 @@
                     <p><b>Báo Cáo Sai Phạm</b></p>
                 </a>
             </div>
-            <hr>
+            <div class="label-center ms-5 mt-5">
+                <h4>Khác</h4>
+            </div>
             <div class="col-md-3">
                 <a class="card lssd container mt-5 mb-5"
                     href="https://sites.google.com/view/info-gta5vn/b%E1%BB%99-lu%E1%BA%ADt-th%C3%A0nh-ph%E1%BB%91?authuser=0"
@@ -140,7 +151,7 @@
                 </a>
             </div>
           
-            <div class="col-md-3">
+            <div class="col-md-3 ms-5">
                 <a class="card lssd container mt-5 mb-5 card-img" id="quy-tac-xung-ho">
                     <img src="./images/QUY_TAC_XUNG_HO.png"
                         class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal"

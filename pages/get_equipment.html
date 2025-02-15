@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../app/css/style.css">
-    <link rel="stylesheet" href="../app/css/form_ia_report.css">
-    <title>Xác Thực</title>
+    <link rel="stylesheet" href="../app/css/get_equipment.css">
+    <title>Báo Cáo Sai Phạm</title>
 </head>
 
 <body>
@@ -39,12 +39,12 @@
                         </a>
                     </li>
                     <li class="nav-item menu-item">
-                        <a class="nav-link menu-link active" aria-current="page" href="#">
-                            Báo Cáo Sai Phạm 
+                        <a class="nav-link menu-link" aria-current="page" href="#">
+                            Báo Cáo Sai Phạm
                         </a>
                     </li>
                     <li class="nav-item menu-item">
-                        <a class="nav-link menu-link" aria-current="page" href="./pages/get_equipment.html">
+                        <a class="nav-link menu-link active" aria-current="page" href="./get_equipment.html">
                             Lấy Trang Bị
                         </a>
                     </li>
@@ -53,17 +53,12 @@
         </div>
         <div class="onl-user-count me-5">Online: <span id="onlineUsers" class="ms-1">0</span></div>
     </nav>
-
-    <!-- Xác thực mật mã -->
-    <div id="auth-container" class="auth-container">
-        <h2>Xác Thực</h2>
-        <input type="password" id="password-input" placeholder="Nhập mật mã...">
-        <button class="btn-auth" id="auth-button" onclick="checkPassword()">Xác Thực</button>
-        <p id="error-message" class="error-message"></p>
-    </div>
-    
+<!-- 
+    <form class="box-form-1 container mt-5 mb-5">
+       
+    </form> -->
+   
     <div class="container">
-        <marquee behavior="" direction="">🚀Vui lòng nhập mã xác thực để biết bạn là ai !!!🚀</marquee>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
@@ -78,6 +73,6 @@
         </footer>
     </div>
 </body>
-<script src="../app/js/auth_ia.js"></script>
+<script src="../app/js/form_ia_report.js"></script>
 
 </html>
