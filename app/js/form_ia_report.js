@@ -38,9 +38,9 @@ function copyAllToClipboard(event) {
     textToCopy += tenViPham && soCanhSat ? `Tên: ${tenViPham} - Đội ${soCanhSat}\n` : '';
     textToCopy += canhSatVienGS ? `CSVGS: ${canhSatVienGS}\n` : '';
     textToCopy += viPham ? `Vi phạm: ${viPham}\n` : '';
-    textToCopy += bienPhap ? `Biện pháp: ${bienPhap} <@&1178655002810667059>\n` : '';
+    textToCopy += bienPhap ? `Biện pháp: ${bienPhap}\n` : ''; // <@&1178655002810667059>
     textToCopy += tenDoiTuong ? `Tên đối tượng: ${tenDoiTuong}\n` : '';
-    textToCopy += cccd ? `CCCD: ${cccd}\n` : '';
+    textToCopy += cccd ? `CCCD: ${cccd}` : '';
 
     if (textToCopy) {
         navigator.clipboard.writeText(textToCopy).then(() => {
