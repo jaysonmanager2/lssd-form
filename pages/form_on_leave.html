@@ -43,7 +43,7 @@
                     </li>
                     <li class="nav-item menu-item">
                         <a class="nav-link menu-link" aria-current="page" href="../pages/auth_ia.html">
-                            Báo Cáo Sai Phạm
+                            <!-- Báo Cáo Sai Phạm -->
                         </a>
                     </li>
                 </ul>
@@ -71,23 +71,24 @@
         <div class="form-group-1">
             <label id="label-2">Cục Trưởng:</label>
             <li id="quan-li-1" value="" class="input-ia static-input">
-                Không Có
+                Chưa bổ nhiệm
             </li>
         </div>
         <div class="form-group-1">
             <label id="label-3">Phó Cục Trưởng:</label>
-            <li id="quan-li-2" class="input-ia static-input" value="<@167389650581716992>">Super Dope</li>
+            <li id="quan-li-2" class="input-ia static-input" value="<@167389650581716992> <@244723257779945482>">Super Dope, Jet Nguyen</li>
         </div>
         <div class="form-group-1">
             <label id="label-4">Trợ Lý Điều Hành:</label>
-            <li id="quan-li-3" class="input-ia static-input" value="<@244723257779945482> <@347949822151622656> <@604610757656576000>">
-                Jet Nguyen, Mr Chips, Duy Iress
+            <li id="quan-li-3" class="input-ia static-input" value="<@347949822151622656> <@604610757656576000>">
+                Mr Chips, Duy Iress
             </li>
         </div>
         <div class="form-group-1">
             <label id="label-5" class="label-select">Trưởng Phòng:</label>
             <select id="select-2">
                 <option value="">--- Không Có Trưởng Phòng ---</option>
+                <option value="<@1173625394356818053>">Trưởng Phòng IA Mha Kem</option>
                 <!-- <option value="<@>">Trưởng Phòng DS</option> -->
                 <!-- <option value="<@>">Trưởng Phòng PS</option> -->
                 <!-- <option value="<@>">Trưởng Phòng SS</option> -->
@@ -98,9 +99,9 @@
             <select id="select-3">
                 <option value="">--- Không Có Phó Phòng ---</option>
                 <option value="<@414038658111242240>">Phó Phòng DS Trinh Stein</option>
-                <option value="<@547944496038543370> <@482708259262824448>">Phó Phòng PS Im Bill, Luat Sama</option>
+                <option value="<@547944496038543370>">Phó Phòng PS Im Bill </option>
                 <option value="<@1281525997799211019>">Phó Phòng SS Dy Daddy</option>
-                <option value="<@1173625394356818053>">Phó Phòng IA Mha Kem </option>
+                <option value="<@440837500848570376>">Phó Phòng IA Son Myname </option>
                 <option value="<@1171037567630712915>">Phó Phòng TA Phuong Teddy</option>
             </select>
         </div>
@@ -174,8 +175,10 @@
                 id="input-6" value="" required>
         </div>
         <hr>
-        <button class="copy-btn" onclick="copyAllToClipboard()">Sao Chép</button>
-        <button class="reset-btn" onclick="resetValue()">Xóa dữ liệu</button>
+        <div class="d-flex box-button-end">
+            <button class="copy-btn" onclick="copyAllToClipboard()">Sao Chép</button>
+            <button class="reset-btn" onclick="resetValue()">Reset</button>
+        </div>
     </form>
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
