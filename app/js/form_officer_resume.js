@@ -63,6 +63,12 @@ function selectSuggestion(element, inputId) {
     // Xóa gợi ý được nhấn
     element.remove();
 }
+function selectSuggestion_Responsive(selectElement, targetInputId) {
+    if (selectElement.value) {
+        document.getElementById(targetInputId).value = selectElement.value;
+        selectElement.value = ""; // Reset dropdown sau khi chọn
+    }
+}
 
 // Lấy ngày hiện tại
 const today = new Date();
