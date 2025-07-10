@@ -19,7 +19,7 @@ const updateCount = () => {
 };
 
 // Lặp lại để kiểm tra các tab mỗi 3 giây
-setInterval(updateCount, 3000);
+setInterval(updateCount, 2500);
 window.addEventListener('beforeunload', () => {
     const onlineUsers = JSON.parse(localStorage.getItem(ONLINE_USERS_KEY)) || [];
     const newUsers = onlineUsers.filter((user) => user !== parseInt(tabId));
