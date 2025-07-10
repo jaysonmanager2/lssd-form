@@ -42,8 +42,13 @@
                         </a>
                     </li>
                     <li class="nav-item menu-item">
-                        <a class="nav-link menu-link" aria-current="page" href="../pages/auth_ia.html">
-                            <!-- Báo Cáo Sai Phạm -->
+                        <a class="nav-link menu-link" aria-current="page" href="../pages/ho-tro-xu-an/index.html">
+                            Hỗ Trợ Xử Án
+                        </a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link menu-link" aria-current="page" href="../pages/ho-tro-truy-na/index.html">
+                            Hỗ Trợ Truy Nã
                         </a>
                     </li>
                 </ul>
@@ -60,20 +65,18 @@
         <!--  -->
         <div class="form-group-1">
             <label id="label-1">Tên Ingame:</label>
-            <input placeholder="Tên trong game. . . " class="input-ia" type="text" id="input-1" value=""
-                required>
+            <input placeholder="Tên trong game. . . " class="input-ia" type="text" id="input-1" value="" required>
         </div>
         <!--  -->
         <div class="form-group-1">
             <label id="label-2">CCCD:</label>
-            <input placeholder="6 số cuối CCCD trong game. . . " class="input-ia" type="number"
-                id="input-2" value="" required>
+            <input placeholder="6 số cuối CCCD trong game. . . " class="input-ia" type="number" id="input-2" value=""
+                required>
         </div>
         <!--  -->
         <div class="form-group-1">
             <label id="label-3">Tên thật:</label>
-            <input placeholder="Tên đời thực. . . " class="input-ia" type="text" id="input-3"
-                value="" required>
+            <input placeholder="Tên đời thực. . . " class="input-ia" type="text" id="input-3" value="" required>
         </div>
         <!--  -->
         <div class="form-group-1">
@@ -83,8 +86,8 @@
         <!--  -->
         <div class="form-group-1">
             <label id="label-5">Nơi Sống:</label>
-            <textarea placeholder="Tỉnh thành phố đang sinh sống. . ." class="input-ia" type="text"
-                id="input-5" value="" cols="100%" required></textarea>
+            <textarea placeholder="Tỉnh thành phố đang sinh sống. . ." class="input-ia" type="text" id="input-5"
+                value="" cols="100%" required></textarea>
         </div>
         <div class="form-group-1">
             <p></p>
@@ -156,8 +159,10 @@
         <div class="form-group-1">
             <p></p>
             <div class="suggestions" id="suggestions">
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Thích làm 1 cảnh sát liêm chính</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Nghiêm túc trong mọi nhiệm vụ</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Thích làm 1 cảnh sát liêm
+                    chính</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Nghiêm túc trong mọi nhiệm
+                    vụ</span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Ca Hát</span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Rap</span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Nhảy đầm</span>
@@ -180,12 +185,17 @@
         <div class="form-group-1">
             <p></p>
             <div class="suggestions" id="suggestions">
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Nghiêm túc và chính trực</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Dũng cảm đối mặt với thử thách</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Chỉ công lý, không thiên vị</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Nghiêm túc và chính
+                    trực</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Dũng cảm đối mặt với thử
+                    thách</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Chỉ công lý, không thiên
+                    vị</span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Tận tâm phục vụ</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Tôn trọng quyền con người</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Liêm chính và trung thực</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Tôn trọng quyền con
+                    người</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Liêm chính và trung
+                    thực</span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">Không bao giờ bỏ cuộc</span>
             </div>
         </div>
@@ -202,7 +212,7 @@
                         <use xlink:href="#bootstrap"></use>
                     </svg>
                 </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Designed and developed by @jebsoon IA</span>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Designed and developed by <a href="https://github.com/songitcode">@jebsoon</a></span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             </ul>
@@ -210,7 +220,7 @@
     </div>
 
 </body>
-<script src="./app/js/onlineTab.js"></script>
+<script src="../app/js/onlineTab.js"></script>
 <script src="../app/js/form_officer_resume.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
