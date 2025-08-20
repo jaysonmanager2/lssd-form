@@ -76,7 +76,8 @@
 #input-proc-5,
 #input-proc-6,
 #input-proc-7,
-#viPhamLuatTieuDungCheck {
+#viPhamLuatTieuDungCheck,
+.giamphutcustomer {
     width: 40px;
     height: 40px;
     padding: 0 10px;
@@ -300,16 +301,16 @@ select {
     position: fixed;
     z-index: 9999;
     left: 50%;
-    top: 30px;
+    bottom: 30px;
     transform: translateX(-50%);
     font-size: 16px;
     opacity: 0;
-    transition: opacity 0.5s ease, top 0.5s ease;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
     border-left: 5px solid #52be4f;
 }
 
 .toast-custom.show {
     visibility: visible;
     opacity: 1;
-    top: 50px;
+    bottom: 50px;
 }
