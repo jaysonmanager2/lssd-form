@@ -78,21 +78,12 @@
             </div>
             <div class="copy_frame" id="copyFrame">
                 <form action="/">
-                    <!-- <ul class="list-unstyled p-3">
-                        <li>Tên: <span class="text_show" id="show-name"></span></li>
-                        <li>CCCD: <span class="text_show" id="show-cccd"></span></li>
-                        <li>Tội Danh:
-                            <span class="text_show" id="show-toiDanh"></span>
-                        </li>
-                        <li>Mức Án: <span class="text_show" id="show-soPhut"></span></li>
-                        <li>Bằng Chứng: </li>
-                    </ul> -->
                     <p class="p-3">
                         Tên: <span class="text_show" id="show-name"></span> <br>
                         CCCD: <span class="text_show" id="show-cccd"></span> <br>
                         Tội Danh: <span class="text_show" id="show-toiDanh"></span> <br>
                         Mức Án: <span class="text_show" id="show-soPhut"></span> <br>
-                        Đã xử lý
+                        Bằng chứng:
                     </p>
                 </form>
             </div>
@@ -107,8 +98,7 @@
                 <div class="masonry-item">
                     <h6>
                         <button class="muc_do btn text-decoration-none d-flex align-items-center" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#mucDo1" aria-expanded="true"
-                            aria-controls="mucDo1">
+                            data-bs-toggle="collapse" data-bs-target="#mucDo1" aria-expanded="true" aria-controls="mucDo1">
                             Mức Độ 1
                             <i class="fa-solid fa-angle-down ms-2 transition"></i>
                         </button>
@@ -138,8 +128,7 @@
                                         hoại tài sản nhà nước</td>
                                 </tr>
                                 <tr>
-                                    <td class="law-td" data-toidan="Gây rối trước trụ sở cơ quan nhà nước"
-                                        data-phut="20">
+                                    <td class="law-td" data-toidan="Gây rối trước trụ sở cơ quan nhà nước" data-phut="20">
                                         Gây rối trước trụ sở cơ quan nhà nước</td>
                                 </tr>
                             </tbody>
@@ -150,8 +139,7 @@
                 <div class="masonry-item">
                     <h6>
                         <button class="muc_do btn text-decoration-none d-flex align-items-center" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#mucDo3" aria-expanded="true"
-                            aria-controls="mucDo3">
+                            data-bs-toggle="collapse" data-bs-target="#mucDo3" aria-expanded="true" aria-controls="mucDo3">
                             Mức Độ 3
                             <i class="fa-solid fa-angle-down ms-2 transition"></i>
                         </button>
@@ -166,8 +154,8 @@
                             <tbody>
                                 <tr>
                                     <td class="law_input_content law-td d-flex justify-content-between align-items-center"
-                                        data-toidan="Tấn công người khác gây thương tích nghiêm trọng"
-                                        data-mucdo="cong_don" data-phut="60">
+                                        data-toidan="Tấn công người khác gây thương tích nghiêm trọng" data-mucdo="cong_don"
+                                        data-phut="60">
 
                                         <div class="td-label flex-grow-1 pe-2">
                                             Tấn công người khác gây thương tích nghiêm trọng
@@ -181,8 +169,19 @@
                                 </tr>
                                 <tr>
                                     <td class="law_input_content law-td d-flex justify-content-between align-items-center"
-                                        data-toidan="Sử dụng vũ khí tấn công Quân đội" data-phut="60"
-                                        data-mucdo="cong_don">
+                                        data-toidan="Sử dụng vũ khí tấn công Cảnh sát" data-phut="60" data-mucdo="cong_don">
+                                        <div class="td-label flex-grow-1 pe-2">
+                                            Sử dụng vũ khí tấn công Cảnh sát
+                                        </div>
+                                        <div class="td-input">
+                                            <input type="number" value="1" min="1"
+                                                class="form-control gioi_han_number law-count-input" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="law_input_content law-td d-flex justify-content-between align-items-center"
+                                        data-toidan="Sử dụng vũ khí tấn công Quân đội" data-phut="60" data-mucdo="cong_don">
                                         <div class="td-label flex-grow-1 pe-2">
                                             Sử dụng vũ khí tấn công Quân đội
                                         </div>
@@ -259,8 +258,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="law-td"
-                                        data-toidan="Tấn công Thống Đốc, Phó Thống Đốc, Nhân viên Chính Phủ"
+                                    <td class="law-td" data-toidan="Tấn công Thống Đốc, Phó Thống Đốc, Nhân viên Chính Phủ"
                                         data-phut="180">
                                         Tấn công Thống Đốc, Phó Thống Đốc, Nhân viên Chính Phủ
                                     </td>
@@ -289,8 +287,7 @@
                 <div class="masonry-item">
                     <h6>
                         <button class="muc_do btn text-decoration-none d-flex align-items-center" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#mucDo2" aria-expanded="true"
-                            aria-controls="mucDo2">
+                            data-bs-toggle="collapse" data-bs-target="#mucDo2" aria-expanded="true" aria-controls="mucDo2">
                             Mức Độ 2
                             <i class="fa-solid fa-angle-down ms-2 transition"></i>
                         </button>
@@ -311,27 +308,25 @@
                                 </tr>
                                 <tr>
                                     <td data-mucdo="2" class="law-td"
-                                        data-toidan="Có lời lẽ xúc phạm đến danh dự, nhân phẩm người khác"
-                                        data-phut="30">Có
+                                        data-toidan="Có lời lẽ xúc phạm đến danh dự, nhân phẩm người khác" data-phut="30">Có
                                         lời lẽ xúc phạm đến danh dự, nhân phẩm người khác
                                     </td>
                                 </tr>
                                 <tr>
                                     <td data-mucdo="2" class="law-td" data-toidan="Sử dụng vũ khí thô sơ nơi công cộng"
                                         data-phut="30">Sử dụng vũ
-                                        khí <span class="h4">thô sơ</span> nơi công cộng
+                                        khí <span class="text-primary h5">thô sơ</span> nơi công cộng
                                     </td>
                                 </tr>
                                 <tr>
                                     <td data-mucdo="2" class="law-td" id="td-dac-biet-1"
-                                        data-toidan="Sử dụng vũ khí nóng nơi công cộng (KTGNVQS + 60p)" data-phut="30">
-                                        Sử
-                                        dụng vũ khí <span class="h4">nóng</span> nơi công cộng
+                                        data-toidan="Sử dụng vũ khí nóng nơi công cộng (KTNVQS + 60p)" data-phut="30">Sử
+                                        dụng vũ khí <span class="text-danger h5">nóng</span> nơi công cộng
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td data-mucdo="2" class="law-td"
-                                        data-toidan="Lừa đảo chiếm đoạt tài sản người khác" data-phut="30">Lừa đảo
+                                    <td data-mucdo="2" class="law-td" data-toidan="Lừa đảo chiếm đoạt tài sản người khác"
+                                        data-phut="30">Lừa đảo
                                         chiếm đoạt tài sản người khác
                                     </td>
                                 </tr>
@@ -355,8 +350,7 @@
                                 </tr>
                                 <tr>
                                     <td data-mucdo="2" class="law-td"
-                                        data-toidan="Sử dụng phương tiện gây thương tích chưa nghiêm trọng"
-                                        data-phut="30">
+                                        data-toidan="Sử dụng phương tiện gây thương tích chưa nghiêm trọng" data-phut="30">
                                         Sử dụng phương tiện gây thương tích chưa nghiêm trọng
                                     </td>
                                 </tr>
@@ -382,8 +376,7 @@
                             <tbody>
                                 <tr>
                                     <td class="law_input_content law-td d-flex justify-content-between align-items-center"
-                                        data-toidan="Tấn công Nhân viên Y Tế (EMS)" data-mucdo="cong_don"
-                                        data-phut="120">
+                                        data-toidan="Tấn công Nhân viên Y Tế (EMS)" data-mucdo="cong_don" data-phut="120">
                                         <div class="td-label flex-grow-1 pe-2">
                                             Tấn công Nhân viên Y Tế (EMS)
                                         </div>
@@ -447,7 +440,7 @@
                                 <tr>
                                     <td class="law_input_content law-td d-flex justify-content-between align-items-center tcts"
                                         data-toidan="Tấn công trụ sở, nơi làm việc thuộc Ban ngành Nhà
-                                                                                                        nước"
+                                                                                                            nước"
                                         data-mucdo="cong_don" data-phut="200">
                                         <div class="td-label flex-grow-1 pe-2">
                                             Tấn công trụ sở, nơi làm việc thuộc Ban ngành Nhà nước
