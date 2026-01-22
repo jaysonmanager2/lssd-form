@@ -376,7 +376,7 @@ customReduceInput.addEventListener('input', () => {
 
     // Áp dụng luật nhóm 1, 2, 3 + checkbox khác nếu cần
     // Hoặc dùng updateToiDanhVaPhut() để tính lại tổng, rồi trừ giảm
-    updateToiDanhVaPhut(); 
+    updateToiDanhVaPhut();
     let currentPhut = parseInt(showSoPhut.textContent) || 0;
 
     // Trừ số phút từ input
@@ -391,4 +391,3 @@ customReduceInput.addEventListener('input', () => {
         showToiDanh.textContent = currentToiDanh || 'Không có';
     }
 });
-
